@@ -16,4 +16,4 @@ social: false  # includes social icons at the bottom of the page
 
 My main reserach interests are 3D vision, SLAM, scene understanding. I received my M.Eng. degree from the <a href="https://english.nudt.edu.cn/">National University of Defense Technology</a> and B.Eng. degree from the <a href="https://en.uestc.edu.cn/">University of Electronic Science and Technology of China</a>.
 
-I am fortunate to have worked with <a href="http://www.cs.bris.ac.uk/~andrew"> Prof. Andrew Calway</a> at the Visual Information Lab, University of Bristol and <a href="http://www.cad.zju.edu.cn/home/gfzhang/">Prof. Guofeng Zhang</a> at the <a href="http://www.cad.zju.edu.cn/english.html">State Key Lab of CAD&CG, Zhejiang University</a>.
+I am fortunate to have worked with <a href="http://www.cs.bris.ac.uk/~andrew"> Prof. Andrew Calway</a> at the <a href="https://vilab.blogs.bristol.ac.uk/">Visual Information Lab</a>, University of Bristol and <a href="http://www.cad.zju.edu.cn/home/gfzhang/">Prof. Guofeng Zhang</a> at the <a href="http://www.cad.zju.edu.cn/english.html">State Key Lab of CAD&CG</a>, Zhejiang University.

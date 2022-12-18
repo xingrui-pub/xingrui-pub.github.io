@@ -1,0 +1,3 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd"> <html><body> <p><a href="https://superuser.com/questions/591154/time-to-zip-very-large-100g-files" rel="external nofollow noopener" target="_blank">Pigz</a> Supports only <code class="language-plaintext highlighter-rouge">tar.gz</code> files:</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>pigz
+<span class="nb">tar</span> <span class="nt">-c</span> <span class="nt">--use-compress-program</span><span class="o">=</span>pigz <span class="nt">-f</span> &lt;filename&gt;.tar.gz &lt;dir-to-zip&gt;
+</code></pre></div></div> </body></html>

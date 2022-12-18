@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd"> <html><body> <p><strong>Two options</strong>:</p> <ul> <li><a href="https://github.com/huan/docker-wechat" rel="external nofollow noopener" target="_blank">Dochat</a></li> <li><a href="https://github.com/top-bettercode/docker-wechat" rel="external nofollow noopener" target="_blank">Docker-wechat</a></li> </ul> <p><strong>Chinese input</strong>:</p> <p>Install <a href="https://pinyin.sogou.com/linux/help.php" rel="external nofollow noopener" target="_blank">sogou pinyin</a></p> <p><strong>Install wechat</strong>:</p> <p><code class="language-plaintext highlighter-rouge">2021-8-3</code>: Tested on Ubuntu 20.04.02 LTS with kernel 5.8.0-43-generic</p> <p>Note: caution using <code class="language-plaintext highlighter-rouge">xhost +</code> as it also allows malicious access. Prefer <code class="language-plaintext highlighter-rouge">--network=host</code> when accessing your local x-server from docker. (<a href="https://github.com/top-bettercode/docker-wechat" rel="external nofollow noopener" target="_blank">Reference</a>)</p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">-d</span> <span class="se">\</span>
+<span class="nt">--name</span> wechat <span class="se">\</span>
+<span class="nt">--device</span> /dev/snd <span class="se">\</span>
+<span class="nt">--ipc</span><span class="o">=</span><span class="s2">"host"</span> <span class="se">\</span>
+<span class="nt">--network</span><span class="o">=</span>host <span class="se">\</span>
+<span class="nt">-v</span> /tmp/.X11-unix:/tmp/.X11-unix <span class="se">\</span>
+<span class="nt">-v</span> <span class="nv">$HOME</span>/Documents/wechat:/WeChatFiles <span class="se">\</span>
+<span class="nt">-e</span> <span class="nv">DISPLAY</span><span class="o">=</span>unix<span class="nv">$DISPLAY</span> <span class="se">\</span>
+<span class="nt">-e</span> <span class="nv">XMODIFIERS</span><span class="o">=</span>@im<span class="o">=</span>fcitx <span class="se">\</span>
+<span class="nt">-e</span> <span class="nv">QT_IM_MODULE</span><span class="o">=</span>fcitx <span class="se">\</span>
+<span class="nt">-e</span> <span class="nv">GTK_IM_MODULE</span><span class="o">=</span>fcitx <span class="se">\</span>
+<span class="nt">-e</span> <span class="nv">AUDIO_GID</span><span class="o">=</span><span class="sb">`</span>getent group audio | <span class="nb">cut</span> <span class="nt">-d</span>: <span class="nt">-f3</span><span class="sb">`</span> <span class="se">\</span>
+<span class="nt">-e</span> <span class="nv">GID</span><span class="o">=</span><span class="sb">`</span><span class="nb">id</span> <span class="nt">-g</span><span class="sb">`</span> <span class="se">\</span>
+<span class="nt">-e</span> <span class="nv">UID</span><span class="o">=</span><span class="sb">`</span><span class="nb">id</span> <span class="nt">-u</span><span class="sb">`</span> <span class="se">\</span>
+bestwu/wechat
+</code></pre></div></div> <p><strong>Icon extension</strong></p> <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>gnome-shell-extension-top-icons-plus
+gnome-extensions-app
+</code></pre></div></div> <p><strong>Compatibility</strong></p> <p><a href="https://github.com/countstarlight/deepin-wine-wechat-arch#%E5%85%BC%E5%AE%B9%E6%80%A7%E8%AE%B0%E5%BD%95" rel="external nofollow noopener" target="_blank">WeChat compatibility list</a></p> </body></html>

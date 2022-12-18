@@ -105,14 +105,14 @@ panelbear_analytics:  # panelbear analytics site ID (format: XXXXXXXXX)
 
 google_site_verification:  # your google-site-verification ID (Google Search Console)
 bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
-
+ 
 # -----------------------------------------------------------------------------
 # Blog
 # -----------------------------------------------------------------------------
 
 blog_name: Future Fusion # blog_name will be displayed in your blog page
 blog_nav_title: Blog # your blog must have a title for it to be displayed in the nav bar
-blog_description: 
+blog_description: “We are trying to prove ourselves wrong as quickly as possible, because only in that way can we find progress.” ― <a href="https://en.wikipedia.org/wiki/Richard_Feynman">Richard P. Feynman</a>
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -141,6 +141,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  cheats:
+    output: true
+    permalink: /cheats/:path/
 
 news_scrollable: true # adds a vertical scroll bar if there are more than 3 news items
 news_limit: 5 # leave blank to include all the news in the `_news` folder

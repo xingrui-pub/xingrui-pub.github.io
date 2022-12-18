@@ -1,0 +1,23 @@
+.cheatsheet {
+    .btn {
+        font-weight: bold;
+        font-size: medium;
+        color: var(--global-text-color);
+        border-left: 1px solid var(--global-text-color);
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+
+        &:hover {
+            color: var(--global-theme-color);
+            border-color: var(--global-theme-color);
+        }
+    }
+
+    .btn-link:hover,
+    .btn-link,
+    .btn-link:focus {
+        text-decoration: none;
+    }
+}
